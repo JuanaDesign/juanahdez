@@ -1,0 +1,153 @@
+.projects {
+  position: relative;
+  padding: 0 160px;
+  padding-top: 170px;
+  padding-bottom: 100px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.projects .title {
+  position: relative;
+  font-size: 80px;
+  font-family: 'Playfair Display', serif;
+  z-index: 2;
+  color: #4C2C66;
+  margin: 0;
+  line-height: 67px;
+}
+
+.project {
+  position: relative;
+  width: 45%;
+  float: left;
+}
+
+.project.below {
+  position: relative;
+  width: 45%;
+  margin-left: 10%;
+  margin-top: 200px;
+}
+
+.project:last-child {
+  margin-bottom: 80px;
+}
+
+.project .project-image {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.project .project-image-link {
+  float: left;
+}
+
+.project .project-text {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  box-sizing: border-box;
+  color: black;
+  float: left;
+}
+
+.project .project-text .project-title {
+  position: relative;
+  margin-bottom: 15px;
+  color: black;
+  font-size: 50px;
+  font-family: 'Playfair Display', serif;
+}
+
+.project .project-text .project-subtitle {
+  position: relative;
+  text-transform: uppercase;
+  color: gray;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 1300px) {
+  .project,
+  .project.below {
+    width: 48%;
+  }
+  
+  .project.below {
+    margin-left: 4%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .projects {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .projects .title {
+    font-size: 55px;
+  }
+
+  .project .project-text .project-title {
+    font-size: 40px;
+  }
+
+  .project .project-text .project-subtitle {
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .project,
+  .project.below {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .project.below {
+    margin: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .projects {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .projects {
+    padding-bottom: 0;
+    padding-top: 50px;
+  }
+
+  .project,
+  .project.below {
+    margin-bottom: 30px;
+  }
+
+  .project .project-image {
+    margin-bottom: 15px;
+  }
+
+  .projects .title {
+    font-size: 40px;
+  }
+
+  .project .project-text .project-title {
+    font-size: 35px;
+  }
+
+  .project .project-text .project-subtitle {
+    font-size: 14px;
+  }
+}

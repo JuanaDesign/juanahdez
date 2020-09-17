@@ -1,0 +1,141 @@
+.contact {
+  position: relative;
+  padding: 100px 160px;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: calc(100vh - 100px);
+}
+
+.contact .title {
+  font-size: 80px;
+  font-family: 'Playfair Display', serif;
+  color: #4C2C66;
+  margin-bottom: 100px;
+  margin-top: 35px;
+  text-align: center;
+}
+
+.contact form {
+  width: 440px;
+  margin: 0 auto 40px auto;
+}
+
+.contact input,
+.contact textarea {
+  margin-bottom: 15px;
+  background-color: #FBFBFB;
+  border: none;
+  width: 100%;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  color: #4C2C66;
+  padding: 5px 8px;
+  box-sizing: border-box;
+}
+
+.contact textarea::placeholder,
+.contact input::placeholder {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  color: #4C2C66;
+  margin-left: 5px;
+}
+
+
+.contact textarea {
+  height: 200px;
+  resize: none;
+  padding-top: 8px;
+}
+
+.contact input {
+  height: 35px;
+}
+
+.contact input[type="submit"] {
+  display: block;
+  width: auto;
+  background-color: transparent;
+  transition: color .5s;
+  margin: 0 auto;
+}
+
+.contact input[type="submit"]:hover {
+  color: #009ee3;
+}
+
+.contact .form-footer {
+  position: relative;
+  width: 100%;
+  height: 35px;
+}
+
+.contact .form-footer span {
+  position: absolute;
+  top: 16px;
+  width: 160px;
+  height: 2px;
+  background-color: #dadad9;
+}
+
+.contact .form-footer span.before {
+  left: 0;
+}
+
+.contact .form-footer span.after {
+  right: 0;
+}
+
+.contact .email {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: 'Playfair Display', serif;
+}
+
+.contact .email a {
+  color: #009ee3;
+}
+
+@media (max-width: 1000px) {
+  .contact .title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact {
+    padding: 100px 100px;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .contact {
+    padding: 100px 50px;
+  }
+}
+
+@media (max-width: 650px) {
+  .contact .title {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 550px) {
+  .contact form {
+    width: 100%;
+  }
+
+  .contact .form-footer span {
+    width: 100px;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .contact .form-footer span {
+    width: 60px;
+  }
+}

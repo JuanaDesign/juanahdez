@@ -1,0 +1,167 @@
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #dadad9;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.main-title {
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Asap', sans-serif;
+  font-size: 16px;
+  color: #dadad9;
+  z-index: 5;
+  cursor: pointer;
+}
+
+section {
+  position: relative;
+  display: block;
+  max-width: 1520px;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100%;
+  background-color: rgba(255,255,255,0.8);
+  z-index: 6;
+}
+
+header .logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  cursor: pointer;
+}
+
+header .logo img {
+  width: 25px;
+}
+
+header nav {
+  position: absolute;
+  top: 480px;
+  left: 53px;
+  width: 392px;
+  height: 18px;
+  transform: rotate(-90deg);
+  transform-origin: bottom left;
+}
+
+header nav ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+header nav ul li:last-child {
+  margin-right: 0;
+}
+
+header nav ul #projects-link {
+  top: 0;
+}
+
+header nav ul #about-me-link {
+  top: 60px;
+}
+
+header nav ul #contact-link {
+  top: 120px;
+}
+
+header nav ul li a {
+  position: relative;
+  display: inline-block;
+  color: #dadad9;;
+  transition: color .5s;
+  font-family: 'Asap', sans-serif;
+  font-size: 18px;
+}
+
+header nav  ul li a:hover {
+  color: #009ee3;
+  text-decoration: none;
+}
+
+header .social-network-wrapper {
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+  width: 25px;
+  height: 105px;
+}
+
+header .social-network-wrapper .social-network-icon {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 0;
+}
+
+header .social-network-wrapper .social-network-icon.facebook {
+  top: 0px;
+}
+
+header .social-network-wrapper .social-network-icon.instagram {
+  top: 40px;
+}
+
+header .social-network-wrapper .social-network-icon.linkedin {
+  top: 80px;
+}
+
+@media (max-width: 1100px) {
+  .main-title {
+    top: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-image {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    background-color: transparent;
+  }
+
+  header nav,
+  header .social-network-wrapper {
+    display: none;
+  }
+
+  header .logo img {
+    width: 14px;
+  }
+}
+
+@media (max-width: 650px) {
+  .main-image {
+    margin-top: 40px;
+  }
+}

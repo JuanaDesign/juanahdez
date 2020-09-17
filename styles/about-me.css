@@ -1,0 +1,220 @@
+.about-me {
+  position: relative;
+  padding: 100px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.about-me .biography-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 0 160px;
+  box-sizing: border-box;
+  margin-bottom: 80px;
+}
+
+.about-me .biography-wrapper img {
+  position: relative;
+  width: 40%;
+  margin-top: 80px;
+}
+
+.about-me .biography-wrapper .text-wrapper {
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 50%;
+}
+
+.about-me .biography-wrapper .text-wrapper .title {
+  position: relative;
+  font-size: 80px;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+  color: #4C2C66;
+  margin-top: 300px;
+}
+
+.about-me .biography-wrapper .text-wrapper .biography {
+  position: relative;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  line-height: 26px;
+}
+
+.about-me .biography-wrapper .text-wrapper .biography .different-font {
+  font-family:'Dancing Script', cursive;
+  font-size: 37px;
+}
+
+
+
+.about-me .timeline {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 80px;
+}
+
+.about-me .timeline .line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 1px;
+  background-color: #dadad9;
+}
+
+.about-me .timeline .event {
+  position: absolute;
+  top: 50%;
+  height: 80px;
+  width: 200px;
+  transform: translateY(-50%);
+}
+
+.about-me .timeline #event1 {
+  left: 15%;
+}
+
+.about-me .timeline #event2 {
+  left: 35%;
+}
+
+.about-me .timeline #event3 {
+  left: 55%;
+}
+
+.about-me .timeline #event4 {
+  left: 75%;
+}
+
+.about-me .timeline .event .date {
+  position: absolute;
+  left: 50%;
+  top: -20px;
+  transform: translateX(-50%);
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #009EE3;
+}
+
+.about-me .timeline .event .point {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #4C2C66;
+  transform: translate(-50%, -50%);
+}
+
+.about-me .timeline .event .name {
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  bottom: -20px;
+  transform: translateX(-50%);
+  font-family: 'Roboto', sans-serif;
+  color: #4C2C66;
+}
+
+@media (max-width: 1400px) {
+  .about-me .biography-wrapper {
+    padding: 0 50px;
+  }
+
+}
+
+@media (max-width: 1300px) {
+  .about-me {
+    padding: 0;
+  }
+
+  .about-me .biography-wrapper {
+    margin-bottom: 200px;
+  }
+
+  .about-me .biography-wrapper .text-wrapper {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about-me .timeline .event {
+    width: 150px;
+  }
+
+  .about-me .timeline #event1 {
+    left: 10%;
+  }
+  .about-me .timeline #event2 {
+    left: 30%;
+  }
+  .about-me .timeline #event3 {
+    left: 50%;
+  }
+  .about-me .timeline #event4 {
+    left: 70%;
+  }
+
+  .about-me .biography-wrapper .text-wrapper .title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .about-me .biography-wrapper {
+    margin-bottom: 300px;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-me .biography-wrapper {
+    padding: 0 50px 0 100px;
+    margin-bottom: 100px;
+    top: 0;
+    margin-top: -200px;
+  }
+
+  .about-me .biography-wrapper img {
+    display: none;
+  }
+
+  .about-me .biography-wrapper .text-wrapper {
+    position: relative;
+    width: 100%;
+    left: auto;
+    top: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-me .biography-wrapper .text-wrapper .title {
+    font-size: 50px;
+  }
+
+  .about-me .timeline .event {
+    width: 120px;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-me .biography-wrapper {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 650px) {
+  .about-me .timeline .event {
+    width: 70px;
+  }
+
+  .about-me .timeline .event .name {
+    bottom: -60px;
+  }
+}
